@@ -11,6 +11,8 @@ import Contacto from './paginas/contacto'
 import 'antd/dist/reset.css';//Esto es porque creamos el proyecto con npx y por la version de antd
 
 import Encabezado from './components/plant/header'
+import FooterW from './components/plant/footerw'
+import FooterCopyright from './components/plant/footercopyright.js'
 import {Layout} from 'antd';
 const {Header, Content, Footer}= Layout;
 function App() {
@@ -31,6 +33,10 @@ function App() {
           </Routes>
         </Content>
       </Router>
+     <Footer>
+      <FooterW/>
+      <FooterCopyright/>
+     </Footer>
     </Layout>
     
   );
