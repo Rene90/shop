@@ -2,7 +2,11 @@
 #root {
   overflow: hidden;
 }
-
+.listablanca{
+  color: white;
+  
+  font-weight: bolder;
+}
 .container {
   max-width: 1170px;
   padding: 0 15px;
