@@ -16,9 +16,11 @@ import {
 function Encabezado(){
     //iniciamos nuestro estado
     const [visible, setVisible] = useState(false)
+    const [size, setSize] = useState(255)
     //Creamos funciones para modicar el estado visible etre true y false
     const showDrawer= ()=>{
         setVisible(true)
+        setSize(255)
     }
     const onClose=()=>{
         setVisible(false)
@@ -53,7 +55,7 @@ function Encabezado(){
                     <Button type="primary" onClick={showDrawer}>
                         <MenuOutlined/>
                     </Button>
-                    <Drawer placement="right" onClose={onClose} open={visible}>
+                    <Drawer placement="right" onClose={onClose} width={size} open={visible}>
                         <nav>
                             <ul>
                                 <li><NavLink onClick={onClose} to="/tienda/react/antd/tiendita/">Inicio</NavLink> </li>
